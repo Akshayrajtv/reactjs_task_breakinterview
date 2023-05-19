@@ -1,13 +1,304 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+    height: 100%;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust the width as desired */
+}
+
+.upper-section {
+    background-color: rgb(151, 226, 252);
+    height: 40vh; /* Adjust the height as desired */
+    width: 100%;
+}
+
+.lower-section {
+    background-color: white;
+    height: 50vh; /* Adjust the height as desired */
+    width: 100%;
+}
+.sidebar {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: white; /* Adjust the color as desired */
+    width: 18%; /* Adjust the width as desired */
+    height: 98vh; /* Adjust the height as desired */
+    border: 2px solid whitesmoke;
+    margin-left: 10px;
+    border-radius: 8px 8px 0 0;
+}
+.sidebarimg {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebarimg img {
+    width: 80px; /* Adjust the width as desired */
+    height: 40px;
+
+    /* Adjust the height as desired */
+}
+
+h4 {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.heading {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.selected {
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    color: white;
+}
+.header-dashboard {
+    margin-left: 30%;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+}
+.para {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.input-container {
+    position: relative;
+    margin-right: 10px;
+}
+
+.input-container input {
+    padding: 10px 30px 10px 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+}
+
+.box-container {
+    width: 220px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px; /* Adjust the gap between boxes */
+}
+
+.box-content {
+    margin-left: 5px;
+}
+.box-heading {
+    font-size: 16px;
+}
+
+.numerical-data {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.blue {
+    background-color: rgb(75, 173, 206);
+}
+.red {
+    background-color: rgb(243, 71, 71);
+}
+.light-green {
+    background-color: lightgreen;
+}
+.orange {
+    background-color: rgb(252, 103, 49);
+}
+.circle-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.box-content p {
+    font-size: 14px;
+    color: #888888;
+}
+.box-content p span {
+    font-weight: bold;
+}
+
+.sec-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.lower_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 {
+    position: absolute;
+    top: 35vh;
+    margin-left: 20%;
+    background-color: white; /* Adjust the color as desired */
+    width: 550px; /* Adjust the width as desired */
+    height: 55vh; /* Adjust the height as desired */
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.box2 {
+    position: absolute;
+    top: 35vh;
+    margin-left: 65%;
+    background-color: white;
+    width: 400px;
+    height: 55vh;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kN1UQDNCKaQRejmtxkF9kV4ReXL_N3Jlrjce98EsPycyZVsnm1QqDdBkgfHwcgKRRI4&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-graph img {
+    width: 450px;
+    height: 40vh;
+    padding: 15px;
+}
+
+.box2-middle{
+    color: white;
+    margin-top: 30%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.loc-icon{
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color:white;
+  border-radius: 5px;
+
+}
+
+.box2-footer{
+    float: right;
+    margin-top: 25px;
+    border: 3px solid whitesmoke;
+}
+
+/* Add these media queries at the end of your CSS file */
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .sec-row {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .box1,
+    .box2 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  
+    .box-graph img {
+      width: 100%;
+    }
+  }
+  
+  /* For screens with a maximum width of 480px */
+  @media screen and (max-width: 480px) {
+    .upper-section {
+      height: auto;
+    }
+  
+    .lower-section {
+      height: auto;
+    }
+  
+    .sec-row {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .box1,
+    .box2 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  
+    .box-graph img {
+      width: 100%;
+    }
+  
+    .header-dashboard {
+      margin-left: 0;
+    }
+  }
+  
