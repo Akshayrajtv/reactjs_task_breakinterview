@@ -6,6 +6,7 @@ import graph from "./assets/graph.png";
 const App = () => {
     return (
         <div className="app">
+            <Sidebar />
             <div className="content">
                 <div className="upper-section">
                     <div className="header">
@@ -114,7 +115,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <Sidebar />
+            
 
             <div className="lower_container">
                 <div className="box1">
